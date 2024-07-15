@@ -1,0 +1,12 @@
+services:
+  php:
+    image: studizz/dev8
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789
+      MYSQL_DATABASE: Projet-MVC-OC
+      MYSQL_USER: Projet-MVC-OC
+      MYSQL_PASSWORD: Projet-MVC-OC
+  phpmyadmin:
+    image: phpmyadmin
