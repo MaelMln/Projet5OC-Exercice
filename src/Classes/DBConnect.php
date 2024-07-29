@@ -2,7 +2,7 @@
 
 class DBConnect
 {
-	private static ?DBConnect $instance = null;
+	private static ?self $instance = null;
 	private PDO $pdo;
 
 	private function __construct()
@@ -14,7 +14,7 @@ class DBConnect
 		}
 	}
 
-	public static function getInstance(): DBConnect
+	public static function getInstance(): self
 	{
 		if (self::$instance === null) {
 			self::$instance = new DBConnect();
